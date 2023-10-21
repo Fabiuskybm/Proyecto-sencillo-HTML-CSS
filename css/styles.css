@@ -1,5 +1,6 @@
 :root {
     --blanco: #fff;
+    --negro: #000;
 }
 
 * {
@@ -45,6 +46,10 @@ header hgroup h2 {
     font-size: 2em;
 }
 
+.wave {
+    height: 300px;
+}
+
 main {
     margin: auto;
     width: 80%;
@@ -55,28 +60,27 @@ main h2 {
     margin-top: 30px;
 }
 
-main section.principal {
-    overflow: hidden;
+.principal, .principal picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-main section.principal picture {
-    width: 50%;
-    float: left;
-}
-
-main section.principal picture img {
+.principal picture img {
     width: 90%;
 }
 
-main section.principal .articulos {
-    width: 50%;
-    float: left;
-    margin-top: 80px;
+.articulos {
     text-align: justify;
 }
 
-main section.principal .articulos article {
-    padding: 10px;
+.articulos article {
+    padding: 20px;
+}
+
+.articulos article p {
+    line-height: 25px;
 }
 
 main span {
@@ -87,4 +91,38 @@ main span {
     margin-right: 5px;
     border-radius: 50%;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.galeria {
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria {
+    overflow: hidden;
+}
+
+.galeria picture {
+    width: 33%;
+    float: left;
+    height: 370px;
+    padding: 8px 10px;
+}
+
+.galeria picture img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
 }
