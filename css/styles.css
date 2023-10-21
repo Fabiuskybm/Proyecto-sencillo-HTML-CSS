@@ -6,28 +6,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
 header {
-    background-image: url(/img/fondo.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(128,0,127,0.54), rgba(255,193,203,0.55)), url(../img/fondo.jpg);
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
+    background-position: center;
     text-align: center;
-    min-height: 35rem;
+    min-height: 350px;
 }
 
 header nav {
-    padding: 1rem;
-    font-size: 1.7rem;
+    padding: 10px;
 }
 
 header nav a {
@@ -37,24 +29,62 @@ header nav a {
 }
 
 header nav a:hover {
-    text-decoration: underline;
-}
-
-header hgroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3.5rem;
-    color: var(--blanco);
+    text-decoration:underline;
 }
 
 header hgroup h1 {
-    font-size: 5.5rem;
-    font-weight: 700;
+    margin-top: 70px;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 3em;
 }
 
 header hgroup h2 {
-    font-size: 4.5rem;
-    font-weight:200;
+    color: var(--blanco);
+    font-weight: 300;
+    font-size: 2em;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 30px;
+}
+
+main section.principal {
+    overflow: hidden;
+}
+
+main section.principal picture {
+    width: 50%;
+    float: left;
+}
+
+main section.principal picture img {
+    width: 90%;
+}
+
+main section.principal .articulos {
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+    text-align: justify;
+}
+
+main section.principal .articulos article {
+    padding: 10px;
+}
+
+main span {
+    font-weight: bolder;
+    color: var(--blanco);
+    background-color: rgb(200,66,217);
+    padding: 1px 6px;
+    margin-right: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
