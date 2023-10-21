@@ -1,6 +1,60 @@
+:root {
+    --blanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
 header {
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    min-height: 35rem;
+}
+
+header nav {
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+header nav a {
+    padding: 1vw;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem;
+    color: var(--blanco);
+}
+
+header hgroup h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+header hgroup h2 {
+    font-size: 4.5rem;
+    font-weight:200;
 }
